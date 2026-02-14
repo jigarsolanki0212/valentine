@@ -4,5 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/valentine/',
+  // Use relative base path to support both GitHub Pages (subdir) and Vercel (root)
+  base: './',
 })
