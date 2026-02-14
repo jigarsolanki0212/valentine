@@ -7,7 +7,6 @@ export default function App() {
   const [noCount, setNoCount] = useState(0);
   const [yesPressed, setYesPressed] = useState(false);
   const [noPosition, setNoPosition] = useState({ x: 0, y: 0 });
-  const yesButtonRef = useRef<HTMLButtonElement>(null);
 
   const handleNoHover = () => {
     const x = Math.random() * 200 - 100; // Random x between -100 and 100
